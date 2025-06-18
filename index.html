@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href="/src/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <script src="/src/main.js"></script>
+    <title>Color Setter</title>
+</head>
+<body>
+    <nav class="header">
+        <div>
+            <input type="color" class="color__input" id="color-one">
+            <input type="color" class="color__input" id="color-two">
+        </div>
+        <div>
+            <label>Высота: </label>
+            <input type="number" class="height" id="height" placeholder="Высота...">
+        </div>
+        <div>
+            <label>Ширина: </label>
+            <input type="number" class="width" id="width" placeholder="Ширина...">
+        </div>
+    </nav>
+    <main>
+        <div class="main-box"></div>
+        <div class="actions">
+            <button id="save-palette">Сохранить палитру</button>
+        </div>
+        <div class="main-colors">
+            <div class="first-color"><div class="color-box"></div></div>
+            <div class="v-color"><div class="color-box"></div></div>
+            <div class="c-color"><div class="color-box"></div></div>
+            <div class="h-color"><div class="color-box"></div></div>
+            <div class="last-color"><div class="color-box"></div></div>
+        </div>
+        <div class="actions">
+            <button id="save-row">Сохранить ряд</button>
+        </div>
+    </main>
+    <div class="color-hex-code"></div>
+</body>
+</html>
